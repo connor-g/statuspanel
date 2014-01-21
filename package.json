@@ -1,0 +1,24 @@
+{
+  "name": "statuspanel",
+  "version": "0.0.0",
+  "description": "Custom panels for the StatusBoard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pspeter3/statuspanel.git"
+  },
+  "keywords": [
+    "statusboard",
+    "react",
+    "koa"
+  ],
+  "author": "Phips Peter",
+  "license": "GPL v2",
+  "bugs": {
+    "url": "https://github.com/pspeter3/statuspanel/issues"
+  },
+  "homepage": "https://github.com/pspeter3/statuspanel"
+}
