@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/pspeter3/statuspanel/issues"
   },
-  "homepage": "https://github.com/pspeter3/statuspanel"
+  "homepage": "https://github.com/pspeter3/statuspanel",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "load-grunt-tasks": "~0.2.1"
+  }
 }
