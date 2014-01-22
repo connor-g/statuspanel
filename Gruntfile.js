@@ -10,8 +10,8 @@ module.exports = function(grunt) {
     statuspanel: {
       grunt: 'Gruntfile.js',
       main: 'index.js',
-      lib: 'lib',
-      test: 'test'
+      lib: 'lib/{,*/}*.js',
+      test: 'test/{,*/}*.js'
     }
   });
 
@@ -42,8 +42,21 @@ module.exports = function(grunt) {
     all: [
       '<%= statuspanel.grunt %>',
       '<%= statuspanel.main %>',
-      '<%= statuspanel.lib %>/{,*/}*.js',
-      '<%= statuspanel.test %>/{,*/}*.js',
+      '<%= statuspanel.lib %>',
+      '<%= statuspanel.test %>',
     ]
+  });
+
+  /**
+   * Mocha Test Settings
+   */
+  grunt.config('mochaTest', {
+    test: {
+      options: {
+        reporter: 'spec',
+        require: 'should'
+      },
+      src: ['<%= statuspanel.test %>']
+    }
   });
 };
