@@ -3,6 +3,9 @@ var loadGruntTasks = require('load-grunt-tasks');
 module.exports = function(grunt) {
   loadGruntTasks(grunt);
 
+  /**
+   * Initial Configuration
+   */
   grunt.initConfig({
     statuspanel: {
       grunt: 'Gruntfile.js',
@@ -12,7 +15,9 @@ module.exports = function(grunt) {
     }
   });
 
-
+  /**
+   * JsHint Settings
+   */
   grunt.config('jshint', {
     options: {
       bitwise: true,
