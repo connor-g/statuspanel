@@ -1,3 +1,5 @@
+var authenticate = require('./lib/middleware/authenticate');
+var basicAuth = require('koa-basic-auth');
 var component = require('./lib/middleware/component');
 var compress = require('koa-compress');
 var config = require('./config');
@@ -17,6 +19,8 @@ app.use(compress());
 app.use(staticCache(path.join(__dirname, 'public'), {
   maxAge: 365 * 24 * 60 * 60
 }));
+app.use(authenticate());
+app.use(basicAuth(config.auth));
 app.use(mount('/foursquare', foursquare));
 app.use(component());
 

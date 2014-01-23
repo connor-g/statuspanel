@@ -31,7 +31,8 @@
     "koa-mount": "~1.2.3",
     "envify": "~0.2.0",
     "react": "~0.8.0",
-    "koa-static-cache": "~1.0.4"
+    "koa-static-cache": "~1.0.4",
+    "koa-basic-auth": "~1.1.1"
   },
   "devDependencies": {
     "grunt-cli": "~0.1.12",
