@@ -1,0 +1,99 @@
+.col-1 {
+  -webkit-box-flex: 1;
+  flex: 1;
+  max-width: 64px; }
+
+.col-2 {
+  -webkit-box-flex: 2;
+  flex: 2;
+  max-width: 128px; }
+
+.col-3 {
+  -webkit-box-flex: 3;
+  flex: 3;
+  max-width: 192px; }
+
+.col-4 {
+  -webkit-box-flex: 4;
+  flex: 4;
+  max-width: 256px; }
+
+.col-5 {
+  -webkit-box-flex: 5;
+  flex: 5;
+  max-width: 320px; }
+
+.col-6 {
+  -webkit-box-flex: 6;
+  flex: 6;
+  max-width: 384px; }
+
+.col-7 {
+  -webkit-box-flex: 7;
+  flex: 7;
+  max-width: 448px; }
+
+.col-8 {
+  -webkit-box-flex: 8;
+  flex: 8;
+  max-width: 512px; }
+
+.col-9 {
+  -webkit-box-flex: 9;
+  flex: 9;
+  max-width: 576px; }
+
+.col-10 {
+  -webkit-box-flex: 10;
+  flex: 10;
+  max-width: 640px; }
+
+.col-11 {
+  -webkit-box-flex: 11;
+  flex: 11;
+  max-width: 704px; }
+
+.col-12 {
+  -webkit-box-flex: 12;
+  flex: 12;
+  max-width: 768px; }
+
+.col-13 {
+  -webkit-box-flex: 13;
+  flex: 13;
+  max-width: 832px; }
+
+.col-14 {
+  -webkit-box-flex: 14;
+  flex: 14;
+  max-width: 896px; }
+
+.col-15 {
+  -webkit-box-flex: 15;
+  flex: 15;
+  max-width: 960px; }
+
+.col-16 {
+  -webkit-box-flex: 16;
+  flex: 16;
+  max-width: 1024px; }
+
+.row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 52px;
+  padding: 6px; }
+
+body {
+  color: white;
+  background-color: black; }
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px; }
+
+.foursquare .time {
+  text-align: right; }

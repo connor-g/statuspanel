@@ -1,0 +1,29 @@
+$unit: 64px;
+$padding: 6px;
+$min: 1;
+$max: 16;
+
+@for $i from $min through $max {
+  .col-#{$i} {
+    -webkit-box-flex: $i;
+    flex: $i;
+    max-width: $i * $unit;
+  }
+}
+
+@mixin width($size) {
+  width: $size * $unit - ($padding * 2);
+}
+
+@mixin height($size) {
+  height: ($size * $unit) - ($padding * 2);
+}
+
+.row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  @include height(1);
+  padding: $padding;
+}

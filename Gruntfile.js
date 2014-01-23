@@ -16,7 +16,7 @@ module.exports = function(grunt) {
       grunt: 'Gruntfile.js',
       main: 'index.js',
       lib: 'lib/{,*/}*.js',
-      test: 'test/{,*/}*.js'
+      test: 'test/{,*/}*.js',
     }
   });
 
@@ -62,4 +62,15 @@ module.exports = function(grunt) {
       src: ['<%= statuspanel.test %>']
     }
   });
+
+  /**
+   * Sass Settings
+   */
+  grunt.config('sass', {
+    dev: {
+      files: {
+        'public/css/statuspanel.css': ['lib/styles/statuspanel.scss']
+      }
+    }
+  })
 };

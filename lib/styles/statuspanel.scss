@@ -1,0 +1,20 @@
+@import "./colors";
+@import "./dimensions";
+
+body {
+  color: $white;
+  background-color: black;
+}
+
+.avatar {
+  $size: 50px;
+  width: $size;
+  height: $size;
+  border-radius: $size / 2;
+}
+
+.foursquare {
+  .time {
+    text-align: right;
+  }
+}
