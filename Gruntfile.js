@@ -3,6 +3,11 @@ var loadGruntTasks = require('load-grunt-tasks');
 module.exports = function(grunt) {
   loadGruntTasks(grunt);
 
+  grunt.registerTask('test', [
+    'jshint',
+    'mochaTest'
+  ]);
+
   /**
    * Initial Configuration
    */
@@ -39,11 +44,10 @@ module.exports = function(grunt) {
       esnext: true,
       node: true
     },
-    all: [
+    app: [
       '<%= statuspanel.grunt %>',
       '<%= statuspanel.main %>',
-      '<%= statuspanel.lib %>',
-      '<%= statuspanel.test %>',
+      '<%= statuspanel.lib %>'
     ]
   });
 
@@ -53,8 +57,7 @@ module.exports = function(grunt) {
   grunt.config('mochaTest', {
     test: {
       options: {
-        reporter: 'spec',
-        require: 'should'
+        reporter: 'spec'
       },
       src: ['<%= statuspanel.test %>']
     }
