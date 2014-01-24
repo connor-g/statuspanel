@@ -72,5 +72,5 @@ module.exports = function(grunt) {
         'public/css/statuspanel.css': ['lib/styles/statuspanel.scss']
       }
     }
-  })
+  });
 };
